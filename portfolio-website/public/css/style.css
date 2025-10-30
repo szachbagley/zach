@@ -1,0 +1,423 @@
+/* Retro Portfolio Website Styles */
+
+/* Import Basic Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courier+New&family=Arial&family=Helvetica&display=swap');
+
+/* Retro Color Palette - Earth Tones */
+:root {
+    --earth-terracotta: #D4A59A;
+    --earth-sage: #A8B5A0;
+    --earth-sand: #E8D5B7;
+    --earth-moss: #8B9D83;
+    --earth-clay: #B8927D;
+    --earth-stone: #C4B5A0;
+    --earth-mint: #B5C9B4;
+    --retro-beige: #D4C4B0;
+    --black: #000000;
+    --white: #FFFFFF;
+    --retro-shadow: 4px 4px 0px #000000;
+}
+
+/* Global Styles */
+* {
+    border-radius: 0 !important; /* Force straight corners everywhere */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--retro-beige);
+    color: var(--black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 0;
+    background-color: var(--earth-terracotta);
+    border-bottom: 5px solid var(--black);
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--black) 0px,
+        var(--black) 10px,
+        transparent 10px,
+        transparent 20px
+    );
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--black);
+    text-shadow: 3px 3px 0px var(--earth-sage);
+    line-height: 1.4;
+}
+
+.hero p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--black);
+}
+
+/* Navigation */
+.navbar {
+    border-bottom: 5px solid var(--black);
+}
+
+.navbar-dark {
+    background-color: var(--earth-clay) !important;
+}
+
+.navbar-brand {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--black) !important;
+    text-shadow: 2px 2px 0px var(--earth-sand);
+}
+
+.nav-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--black) !important;
+    border: 3px solid transparent;
+    padding: 8px 16px !important;
+    margin: 0 5px;
+    transition: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: var(--earth-sand);
+    border: 3px solid var(--black);
+    box-shadow: var(--retro-shadow);
+}
+
+/* Cards */
+.card {
+    border: 4px solid var(--black);
+    box-shadow: var(--retro-shadow);
+    transition: none;
+    background-color: var(--white);
+}
+
+.card:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--black);
+}
+
+.card-body {
+    background-color: var(--earth-sage);
+    border-top: 4px solid var(--black);
+}
+
+.card-img-top {
+    border-bottom: 4px solid var(--black);
+}
+
+.card-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+/* Buttons */
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: 4px solid var(--black);
+    box-shadow: var(--retro-shadow);
+    transition: none;
+}
+
+.btn:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--black);
+}
+
+.btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: var(--earth-moss);
+    border-color: var(--black);
+    color: var(--black);
+}
+
+.btn-primary:hover {
+    background-color: var(--earth-mint);
+    border-color: var(--black);
+    color: var(--black);
+}
+
+.btn-light {
+    background-color: var(--white);
+    border-color: var(--black);
+    color: var(--black);
+}
+
+.btn-light:hover {
+    background-color: var(--earth-sand);
+    border-color: var(--black);
+    color: var(--black);
+}
+
+.btn-outline-primary {
+    background-color: var(--white);
+    color: var(--black);
+    border-color: var(--black);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--earth-terracotta);
+    border-color: var(--black);
+    color: var(--black);
+}
+
+.btn-outline-secondary {
+    background-color: var(--white);
+    color: var(--black);
+    border-color: var(--black);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--earth-stone);
+    border-color: var(--black);
+    color: var(--black);
+}
+
+.btn-outline-dark {
+    background-color: var(--earth-sage);
+    color: var(--black);
+    border-color: var(--black);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--earth-clay);
+    border-color: var(--black);
+    color: var(--black);
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    border-top: 5px solid var(--black);
+}
+
+.bg-dark {
+    background-color: var(--earth-clay) !important;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+    color: var(--black) !important;
+}
+
+/* Background Colors for Sections */
+.bg-light {
+    background-color: var(--earth-mint) !important;
+    color: var(--black);
+}
+
+.bg-primary {
+    background-color: var(--earth-terracotta) !important;
+    color: var(--black);
+}
+
+/* Form Styles */
+.form-control {
+    border: 3px solid var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: var(--white);
+    transition: none;
+}
+
+.form-control:focus {
+    border-color: var(--black);
+    box-shadow: var(--retro-shadow);
+    background-color: var(--earth-sand);
+}
+
+.form-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+/* Badge Styles */
+.badge {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--black);
+    background-color: var(--earth-stone);
+    color: var(--black);
+}
+
+.bg-primary.badge {
+    background-color: var(--earth-sage);
+}
+
+/* Text Colors */
+.text-white {
+    color: var(--black) !important;
+}
+
+.text-muted {
+    color: var(--black) !important;
+    opacity: 0.8;
+}
+
+/* Section Styling */
+section {
+    min-height: 50vh;
+    padding: 60px 0;
+}
+
+/* Home page specific - beige background */
+.home-cards {
+    background-color: var(--retro-beige);
+    min-height: 85vh;
+}
+
+section:nth-child(odd) {
+    background-color: var(--earth-sage);
+}
+
+section:nth-child(even) {
+    background-color: var(--earth-sand);
+}
+
+/* Special card styles for home page */
+.card-large .card-body {
+    background-color: var(--earth-terracotta);
+    padding: 2rem;
+}
+
+.card-fun .card-body {
+    background-color: var(--earth-sand);
+}
+
+/* Headings */
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-shadow: 3px 3px 0px var(--earth-terracotta);
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+/* Lead text */
+.lead {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Pixel art style divider */
+.retro-divider {
+    height: 5px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--black) 0px,
+        var(--black) 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    margin: 30px 0;
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+    border: 3px solid var(--black);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='square' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+}
+
+/* Container borders */
+.container {
+    position: relative;
+}
+
+/* Display headings */
+.display-4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Remove smooth scrolling for retro feel */
+html {
+    scroll-behavior: auto;
+}
+
+/* List items in cards */
+.list-unstyled li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Card subtitle */
+.card-subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+}
