@@ -1,0 +1,54 @@
+# Node modules (will be installed in container)
+node_modules
+npm-debug.log
+
+# Git files
+.git
+.gitignore
+
+# Documentation
+README.md
+DESIGN_NOTES.md
+DEPLOYMENT_PLAN.md
+
+# Development files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+test
+tests
+*.test.js
+*.spec.js
+
+# CI/CD
+.github
+.gitlab-ci.yml
+
+# Logs
+logs
+*.log
+
+# Temporary files
+tmp
+temp
+*.tmp
+
+# Docker files (no need to copy into image)
+Dockerfile
+.dockerignore
+
+# Other
+info.json
