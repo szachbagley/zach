@@ -108,8 +108,8 @@
   },
   "portfolio": [
     {
-      "name": "ARCHIVIST (CAPSTONE PROJECT)",
-      "description": "Archivist is an AI-supported file management assistant. It organizes and names files automatically in relevant and logical structures and provides a chatbot which understands the filesystem's content and provides thorough, competent responses to questions. Archivist is in development and far from complete. You can follow its progress at the links below.",
+      "name": "Sorterra (CAPSTONE PROJECT)",
+      "description": "Sorterra is an AI-supported file management assistant. It organizes and names files automatically in relevant and logical structures and provides a chatbot which understands the filesystem's content and provides thorough, competent responses to questions. Sorterra is in development and far from complete. You can follow its progress at the links below.",
       "liveLink": "[TBA]",
       "github": "[TBA]"
     },

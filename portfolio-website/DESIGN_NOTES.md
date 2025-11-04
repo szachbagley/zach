@@ -73,8 +73,15 @@ A personal portfolio website built with Node.js, Express.js, and Bootstrap with 
 
 ## Other Pages
 - **About:** Background, education, experience details
-- **Projects:** Project showcase with 6 sample projects
-- **Contact:** Contact form and information
+- **Resume:** Full resume with education, experience, skills
+- **Projects:** Project showcase with 8 projects
+- **Programming Portfolio:** LeetCode solutions and algorithms (linked from Projects, NOT in navbar)
+  - Linked Lists (LeetCode #234)
+  - Binary Trees (LeetCode #100, #101, Binary Tree Visualizer)
+  - Tries (LeetCode #208)
+  - Graphs (BFS implementation)
+  - Other problems (6 additional LeetCode solutions)
+- **Contact:** Contact form (IN DEVELOPMENT - not linked in navigation)
 
 ## Navigation
 - Clay brown background
@@ -102,19 +109,43 @@ portfolio-website/
 ├── views/
 │   ├── index.html
 │   ├── about.html
+│   ├── resume.html
 │   ├── projects.html
-│   └── contact.html
+│   ├── programming-portfolio.html      # NEW: LeetCode solutions
+│   └── contact.html                    # Not linked - in development
 ├── server.js
 ├── package.json
-└── README.md
+├── Dockerfile
+├── .dockerignore
+├── info.json
+├── LeetCodePortfolio.pdf              # Source for programming-portfolio.html
+├── README.md
+├── DESIGN_NOTES.md
+├── DEPLOYMENT_PLAN.md                 # Original plan (not used)
+└── LIGHTSAIL_DEPLOYMENT.md            # Active deployment guide
 ```
 
 ## Running the Project
+
+### Local Development
 ```bash
 cd portfolio-website
 npm start
 # Visit http://localhost:3000
 ```
+
+### Docker (Testing before deployment)
+```bash
+# IMPORTANT: Build for AMD64 (Lightsail architecture)
+docker build --platform linux/amd64 -t portfolio-website .
+docker run -p 3000:3000 portfolio-website
+# Visit http://localhost:3000
+```
+
+### Production (Live Site)
+**Live at**: https://zachbagley.net
+**Deployment**: AWS Lightsail + Docker + Caddy
+**Always deploy via ECR** (see README.md for deployment workflow)
 
 ## Design Preferences (Key Decisions Made)
 1. ❌ No hero section on home page
@@ -141,3 +172,26 @@ npm start
 - Keep fonts basic - avoid decorative or retro styles
 - Maintain the card-based home page layout
 - All corners must remain square (no rounding)
+
+## Current Implementation Status (as of 2025-11-04)
+### ✅ Completed
+- Home page with card-based layout
+- About page with personal interests
+- Resume page with full work history
+- Projects page with 8 project cards
+- Programming Portfolio page (LeetCode solutions from PDF)
+- Docker containerization
+- Deployed to AWS Lightsail with Caddy
+- Domain connected: zachbagley.net
+- Automatic HTTPS via Let's Encrypt
+
+### 🚧 In Progress / Not Linked
+- Contact page (exists but not linked in navigation)
+- Contact form backend functionality
+
+### 📋 Future Enhancements
+- Add actual project screenshots to `/public/images/`
+- Replace [TBA] links with actual URLs
+- Implement contact form backend
+- Consider adding blog section
+- Add more LeetCode solutions as completed

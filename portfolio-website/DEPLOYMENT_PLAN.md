@@ -1,6 +1,18 @@
 # Portfolio Website Deployment Plan
 ## Goal: Deploy to AWS ECS and connect to zachbagley.net
 
+⚠️ **NOTE: THIS PLAN IS NOT BEING USED** ⚠️
+
+**This document was the original deployment plan for ECS + ALB, but it was determined to be too expensive ($28-32/month).**
+
+**✅ ACTIVE DEPLOYMENT GUIDE: See `LIGHTSAIL_DEPLOYMENT.md`**
+
+The project is currently deployed to AWS Lightsail ($5/month) with Docker and Caddy.
+- Live site: https://zachbagley.net
+- Always deploy via ECR (see README.md for workflow)
+
+This file is kept for reference only.
+
 ---
 
 ## Phase 1: Dockerization

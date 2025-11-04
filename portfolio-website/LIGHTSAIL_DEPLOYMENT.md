@@ -1,13 +1,24 @@
 # AWS Lightsail Deployment Guide
 ## Portfolio Website on Lightsail VPS
 
-**Cost: $3.50-5/month** (compared to $28-32/month for ECS+ALB)
+**Cost: $5/month** (compared to $28-32/month for ECS+ALB)
+**Status: ✅ ACTIVE - Site deployed and live at https://zachbagley.net**
+
+---
+
+## Current Deployment Details
+
+**Live Site**: https://zachbagley.net
+**Static IP**: 54.201.223.169
+**ECR Repository**: 403894226819.dkr.ecr.us-east-1.amazonaws.com/portfolio-website
+**Instance**: portfolio-website (us-west-2, $5/month plan)
+**Last Updated**: 2025-11-04
 
 ---
 
 ## Overview
 
-This guide will walk you through deploying your containerized portfolio website to AWS Lightsail using a VPS (Virtual Private Server) approach.
+This guide documents the deployment of the containerized portfolio website to AWS Lightsail using a VPS approach. The project uses **ECR as the deployment method** (not building on server).
 
 ### What You'll Get:
 - ✅ Static IP address (never changes)
@@ -145,7 +156,9 @@ sudo systemctl status caddy
 
 ## Phase 4: Deploy Your Docker Container
 
-### 4.1 Option A: Pull from ECR (if you already pushed to ECR)
+**NOTE: ALWAYS USE ECR (Option A) - This is the standard deployment method**
+
+### 4.1 Option A: Pull from ECR (PREFERRED METHOD)
 
 ```bash
 # Install AWS CLI
@@ -172,34 +185,11 @@ docker run -d \
   <account-id>.dkr.ecr.<your-region>.amazonaws.com/portfolio-website:latest
 ```
 
-### 4.2 Option B: Build on Server (simpler if no ECR)
+### 4.2 Option B: Build on Server (NOT RECOMMENDED - DO NOT USE)
 
-```bash
-# Install git
-sudo apt install git -y
+**NOTE: User preference is to ALWAYS use ECR. Skip this option.**
 
-# Clone your repository (if on GitHub)
-git clone <your-repo-url>
-cd portfolio-website
-
-# Or upload files using SCP from your local machine:
-# scp -i /path/to/key.pem -r /local/path/portfolio-website ubuntu@<static-ip>:~/
-```
-
-**If you clone/upload the code:**
-```bash
-cd ~/portfolio-website
-
-# Build the Docker image
-docker build -t portfolio-website .
-
-# Run the container
-docker run -d \
-  --name portfolio \
-  --restart unless-stopped \
-  -p 3000:3000 \
-  portfolio-website:latest
-```
+This option is documented for reference but should not be used for this project.
 
 ### 4.3 Verify Container is Running
 
@@ -621,6 +611,74 @@ sudo systemctl enable fail2ban
 
 ---
 
-**Last Updated**: 2025-11-02
-**Deployment Status**: Ready to deploy
-**Estimated Setup Time**: 1-2 hours
+## Standard Deployment Workflow (ECR Method)
+
+### For Future Updates:
+
+**On Local Machine:**
+```bash
+# 1. Build for AMD64 architecture
+docker build --platform linux/amd64 -t portfolio-website .
+
+# 2. Authenticate to ECR
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 403894226819.dkr.ecr.us-east-1.amazonaws.com
+
+# 3. Tag image
+docker tag portfolio-website:latest 403894226819.dkr.ecr.us-east-1.amazonaws.com/portfolio-website:latest
+
+# 4. Push to ECR
+docker push 403894226819.dkr.ecr.us-east-1.amazonaws.com/portfolio-website:latest
+```
+
+**On Lightsail Server:**
+```bash
+# 1. SSH into server
+ssh -i ../portfolio-key.pem ubuntu@54.201.223.169
+
+# 2. Authenticate to ECR
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 403894226819.dkr.ecr.us-east-1.amazonaws.com
+
+# 3. Pull latest image
+docker pull 403894226819.dkr.ecr.us-east-1.amazonaws.com/portfolio-website:latest
+
+# 4. Stop and remove old container
+docker stop portfolio
+docker rm portfolio
+
+# 5. Run new container
+docker run -d --name portfolio --restart unless-stopped -p 3000:3000 403894226819.dkr.ecr.us-east-1.amazonaws.com/portfolio-website:latest
+
+# 6. Verify
+docker ps
+docker logs portfolio
+```
+
+**Changes are live immediately at https://zachbagley.net**
+
+---
+
+## Session History
+
+### 2025-11-04 - Initial Deployment and Programming Portfolio
+**Completed:**
+- ✅ Deployed website to Lightsail
+- ✅ Configured Caddy for automatic HTTPS
+- ✅ Connected zachbagley.net domain
+- ✅ Established ECR workflow as standard
+- ✅ Added programming portfolio page with LeetCode solutions
+- ✅ Commented out Contact page links (in development)
+- ✅ Updated all documentation
+
+**Current Pages:**
+- Home (index.html)
+- About (about.html)
+- Resume (resume.html)
+- Projects (projects.html)
+- Programming Portfolio (programming-portfolio.html) - Linked from Projects page
+- Contact (contact.html) - Not linked, in development
+
+---
+
+**Last Updated**: 2025-11-04
+**Deployment Status**: ✅ LIVE AND OPERATIONAL
+**Site**: https://zachbagley.net
