@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">Zach Bagley</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -29,32 +29,28 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/projects">Projects</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
-                    </li> -->
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Resume Section -->
-    <section class="py-5">
+    <section style="margin-top: 64px;">
         <div class="container">
-            <h1 class="mb-4">Resume</h1>
+            <h1 class="mb-5">Resume</h1>
 
             <!-- Education Section -->
-            <h2 class="mb-4">Education</h2>
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">Master of Science, Information Systems</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Brigham Young University, Marriott School of Business | Aug 2021 – Apr 2026</h6>
-                    <p class="card-text">
+            <div class="resume-section">
+                <h2>Education</h2>
+                <div class="resume-item">
+                    <h3>Master of Science, Information Systems</h3>
+                    <h4>Brigham Young University, Marriott School of Business</h4>
+                    <p class="date">Aug 2021 – Apr 2026</p>
+                    <p>
                         <strong>Emphasis:</strong> Software Engineering<br>
                         <strong>Location:</strong> Provo, UT
                     </p>
-                    <p class="card-text">
-                        <strong>Achievements:</strong>
-                    </p>
+                    <p><strong>Achievements:</strong></p>
                     <ul>
                         <li>GPA 3.85</li>
                         <li>ACT 33 (98th percentile)</li>
@@ -65,50 +61,48 @@
             </div>
 
             <!-- Experience Section -->
-            <h2 class="mb-4 mt-5">Experience</h2>
+            <div class="resume-section">
+                <h2>Experience</h2>
 
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Software Engineering Intern</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Melaleuca, Inc., Idaho Falls, ID | May 2025 – Aug 2025</h6>
-                    <ul class="card-text">
+                <div class="resume-item">
+                    <h3>Software Engineering Intern</h3>
+                    <h4>Melaleuca, Inc., Idaho Falls, ID</h4>
+                    <p class="date">May 2025 – Aug 2025</p>
+                    <ul>
                         <li>Developed a modular retrieval system for profile data across 20 C#/.NET APIs, reducing API and database calls by up to 80% in 75% of cases, improving performance and infrastructure load</li>
                         <li>Designed and implemented partial profile update and caching mechanisms using Kafka consumers, enabling targeted cache refreshes to lighten processing load</li>
                         <li>Built a C# console app and supporting API routes to streamline PDF generation and storage of customer enrollment data; utilized application in automated jobs with JAMS</li>
                         <li>Increased maintainability with comprehensive unit tests and by auditing repositories for deprecated code</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Software Engineer</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">BYU J. Reuben Clark Law School, Provo, UT | Apr 2024 – May 2025</h6>
-                    <ul class="card-text">
+                <div class="resume-item">
+                    <h3>Software Engineer</h3>
+                    <h4>BYU J. Reuben Clark Law School, Provo, UT</h4>
+                    <p class="date">Apr 2024 – May 2025</p>
+                    <ul>
                         <li>Led backend development team for law.byu.edu and other BYU Law sites, implementing secure handling of user data and access control measures, including SSO and MFA</li>
                         <li>Configured and maintained secure cloud architecture for law.byu.edu and cpcr.byu.edu (AWS)</li>
                         <li>Enhanced security, functionality, and maintainability of BYU Law's internal information system's Node.js backend through refactoring of code architecture</li>
                         <li>Contributed to law.byu.edu's frontend development (React)</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Teaching Assistant (Data Communications & Enterprise Application Development)</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">BYU Information Systems, Provo, UT | Sep 2025 – Present</h6>
-                    <ul class="card-text">
+                <div class="resume-item">
+                    <h3>Teaching Assistant (Data Communications & Enterprise Application Development)</h3>
+                    <h4>BYU Information Systems, Provo, UT</h4>
+                    <p class="date">Sep 2025 – Present</p>
+                    <ul>
                         <li>Contributed to curriculum development and student assistance in topics related to data communications (especially TCP/IP networking) and application development (particularly with ASP .NET)</li>
                         <li>Graded assignments including code repositories, AWS infrastructure stacks, and full development projects</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">IT Specialist</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">BYU Department of Continuing Education, Provo, UT | Sep 2023 – Apr 2024</h6>
-                    <ul class="card-text">
+                <div class="resume-item">
+                    <h3>IT Specialist</h3>
+                    <h4>BYU Department of Continuing Education, Provo, UT</h4>
+                    <p class="date">Sep 2023 – Apr 2024</p>
+                    <ul>
                         <li>Managed system privileges, network configuration, and access control for DCE's appx. 800 employees, including compliance with organizational security policies</li>
                         <li>Resolved technical issues to support secure and efficient IT environment</li>
                         <li>Configured and maintained computer workstations</li>
@@ -117,100 +111,102 @@
             </div>
 
             <!-- Projects & Skills Section -->
-            <h2 class="mb-4 mt-5">Projects & Skills</h2>
+            <div class="resume-section">
+                <h2>Skills</h2>
 
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Programming Languages</h5>
-                            <div class="skill-list">
-                                <span class="badge d-inline-block mb-2 me-2">C#</span>
-                                <span class="badge d-inline-block mb-2 me-2">JavaScript</span>
-                                <span class="badge d-inline-block mb-2 me-2">Swift</span>
-                                <span class="badge d-inline-block mb-2 me-2">Python</span>
-                                <span class="badge d-inline-block mb-2 me-2">PHP</span>
-                                <span class="badge d-inline-block mb-2 me-2">Java</span>
-                                <span class="badge d-inline-block mb-2 me-2">C++</span>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Programming Languages</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">C#</span>
+                                    <span class="badge bg-primary me-1 mb-2">JavaScript</span>
+                                    <span class="badge bg-primary me-1 mb-2">Swift</span>
+                                    <span class="badge bg-primary me-1 mb-2">Python</span>
+                                    <span class="badge bg-primary me-1 mb-2">PHP</span>
+                                    <span class="badge bg-primary me-1 mb-2">Java</span>
+                                    <span class="badge bg-primary me-1 mb-2">C++</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Frameworks</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">.NET Core</span>
+                                    <span class="badge bg-primary me-1 mb-2">Express (Node.js)</span>
+                                    <span class="badge bg-primary me-1 mb-2">SwiftUI</span>
+                                    <span class="badge bg-primary me-1 mb-2">React</span>
+                                    <span class="badge bg-primary me-1 mb-2">Vapor</span>
+                                    <span class="badge bg-primary me-1 mb-2">Laravel</span>
+                                    <span class="badge bg-primary me-1 mb-2">Vue</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Cloud & DevOps</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">AWS (EC2, ECS, RDS)</span>
+                                    <span class="badge bg-primary me-1 mb-2">CloudFormation</span>
+                                    <span class="badge bg-primary me-1 mb-2">S3</span>
+                                    <span class="badge bg-primary me-1 mb-2">Docker</span>
+                                    <span class="badge bg-primary me-1 mb-2">CD/CI (CodePipeline)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Security</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">IDS/IPS (Suricata, Zeek, Snort)</span>
+                                    <span class="badge bg-primary me-1 mb-2">Vulnerability Testing</span>
+                                    <span class="badge bg-primary me-1 mb-2">Nmap, Nessus, Metasploit</span>
+                                    <span class="badge bg-primary me-1 mb-2">Wireshark</span>
+                                    <span class="badge bg-primary me-1 mb-2">Kali Linux</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">AI Tools</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">Claude Code</span>
+                                    <span class="badge bg-primary me-1 mb-2">Cursor</span>
+                                    <span class="badge bg-primary me-1 mb-2">GitHub Copilot</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Frameworks</h5>
-                            <div class="skill-list">
-                                <span class="badge d-inline-block mb-2 me-2">.NET Core</span>
-                                <span class="badge d-inline-block mb-2 me-2">Express (Node.js)</span>
-                                <span class="badge d-inline-block mb-2 me-2">SwiftUI</span>
-                                <span class="badge d-inline-block mb-2 me-2">React</span>
-                                <span class="badge d-inline-block mb-2 me-2">Vapor</span>
-                                <span class="badge d-inline-block mb-2 me-2">Laravel</span>
-                                <span class="badge d-inline-block mb-2 me-2">Vue</span>
-                            </div>
-                        </div>
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio</h5>
+                        <p class="card-text">For a detailed look at my projects, please visit the <a href="/projects">Projects page</a>.</p>
                     </div>
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Cloud & DevOps</h5>
-                            <div class="skill-list">
-                                <span class="badge d-inline-block mb-2 me-2">AWS (EC2, ECS, RDS)</span>
-                                <span class="badge d-inline-block mb-2 me-2">CloudFormation</span>
-                                <span class="badge d-inline-block mb-2 me-2">S3</span>
-                                <span class="badge d-inline-block mb-2 me-2">Docker</span>
-                                <span class="badge d-inline-block mb-2 me-2">CD/CI (CodePipeline)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Security</h5>
-                            <div class="skill-list">
-                                <span class="badge d-inline-block mb-2 me-2">IDS/IPS (Suricata, Zeek, Snort)</span>
-                                <span class="badge d-inline-block mb-2 me-2">Vulnerability Testing</span>
-                                <span class="badge d-inline-block mb-2 me-2">Nmap, Nessus, Metasploit</span>
-                                <span class="badge d-inline-block mb-2 me-2">Wireshark</span>
-                                <span class="badge d-inline-block mb-2 me-2">Kali Linux</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">AI Tools</h5>
-                            <div class="skill-list">
-                                <span class="badge d-inline-block mb-2 me-2">Claude Code</span>
-                                <span class="badge d-inline-block mb-2 me-2">Cursor</span>
-                                <span class="badge d-inline-block mb-2 me-2">GitHub Copilot</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mt-4">
-                <div class="card-body">
-                    <h5 class="card-title">Portfolio</h5>
-                    <p class="card-text">For a detailed look at my projects, please visit the <a href="/projects">Projects page</a>.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4 mt-5">
+    <footer>
         <div class="container">
-            <p class="mb-0">&copy; 2025 Zach Bagley</p>
+            <p>&copy; 2025 S. Zach Bagley. All rights reserved.</p>
         </div>
     </footer>
 
