@@ -15,6 +15,9 @@ COPY server.js ./
 COPY public ./public
 COPY views ./views
 
+# Fix ownership for node user
+RUN chown -R node:node /app
+
 # Expose port 3000
 EXPOSE 3000
 
