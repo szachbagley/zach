@@ -1,0 +1,43 @@
+# Information and documentation files (except README.md)
+DESIGN_NOTES.md
+DEPLOYMENT_PLAN.md
+LIGHTSAIL_DEPLOYMENT.md
+SESSION_NOTES.md
+deploycommands.md
+info.json
+project_links.json
+
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Build outputs
+dist/
+build/
