@@ -63,17 +63,12 @@ portfolio-website/
 
 ### Local Development (Without Docker)
 
-1. Navigate to the project directory:
-```bash
-cd portfolio-website
-```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Start the server:
+2. Start the server:
 ```bash
 npm start
 ```
@@ -144,7 +139,7 @@ docker push 403894226819.dkr.ecr.us-east-1.amazonaws.com/portfolio-website:lates
 
 ```bash
 # SSH into Lightsail
-ssh -i ../portfolio-key.pem ubuntu@54.201.223.169
+ssh -i portfolio-key.pem ubuntu@54.201.223.169
 
 # Authenticate Docker to ECR (on Lightsail)
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 403894226819.dkr.ecr.us-east-1.amazonaws.com
