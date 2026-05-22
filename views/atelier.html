@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zach Bagley - Atelier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/">Zach Bagley</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section style="margin-top: 64px;">
+        <div class="container">
+
+            <!-- Back link -->
+            <a href="/projects" class="btn btn-outline-primary mb-5" style="font-size: 12px;">&larr; All Projects</a>
+
+            <!-- Project Title & Tags -->
+            <h1 class="mb-3">Atelier</h1>
+            <div class="mb-5">
+                <span class="badge bg-primary me-1">[Tag 1]</span>
+                <span class="badge bg-primary me-1">[Tag 2]</span>
+                <span class="badge bg-primary me-1">[Tag 3]</span>
+            </div>
+
+            <!-- Description -->
+            <div class="resume-section">
+                <h2>Description</h2>
+                <p>
+                    Atelier is an AI-powered storyboarding tool for filmmakers. It streamlines the concept art and storyboarding phases of pre-production by combining conversational AI, image generation, and professional annotation tools into a single workflow.
+                </p>
+                <h3>The flow:</h3>
+                <h4>Concept Art Phase</h4>
+                <ul>
+                    <li>Generate concept art through conversation with AI to visualize characters, settings, props, and art styles</li>
+                    <li>Upload your own reference images as alternatives to AI generation</li>
+                    <li>Build a component library of reusable visual elements with AI-digestible descriptions</li>
+                </ul>
+                <h4>Storyboarding Phase</h4>
+                <ul>
+                    <li>Organize your storyboard hierarchically: Acts → Scenes → Shots</li>
+                    <li>Compose shots by selecting components from your library and describing the action</li>
+                    <li>Generate storyboard frames using AI image generation (Google Gemini -- support for other platforms coming soon)</li>
+                    <li>Annotate frames with arrows, text boxes, and camera movement symbols</li>
+                    <li>Iterate on shots through conversation until they match your vision</li>
+                </ul>
+                <p>
+                    Atlier is a work in progress, and is a purely personal project driven by my love for film and technology.
+                </p>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="resume-section">
+                <h2>Tech Stack</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <h5 class="card-title">Frontend</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">React 18</span>
+                                    <span class="badge bg-primary me-1 mb-2">TypeScript</span>
+                                    <span class="badge bg-primary me-1 mb-2">Tailwind CSS</span>
+                                    <span class="badge bg-primary me-1 mb-2">React Query</span>
+                                    <span class="badge bg-primary me-1 mb-2">Zustand</span>
+                                    <span class="badge bg-primary me-1 mb-2">Fabric.js</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">Backend</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">Node.js</span>
+                                    <span class="badge bg-primary me-1 mb-2">Express</span>
+                                    <span class="badge bg-primary me-1 mb-2">TypeScript</span>
+                                    <span class="badge bg-primary me-1 mb-2">MySQL 8.0</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">Infrastructure</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">AWS (ECS Fargate, S3, EC2, ALB, Secrets Manager)</span>
+                                    <span class="badge bg-primary me-1 mb-2">Git / GitHub</span>
+                                    <span class="badge bg-primary me-1 mb-2">Docker</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">AI</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">Claude Code (development and automation)</span>
+                                    <span class="badge bg-primary me-1 mb-2">Google Gemini (Imagen) (in-app image generation)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Remove columns that don't apply. For simpler projects, a single flat list of badges works fine. -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- PUT DEMO IN HERE WHEN IT"S READY! Get template from template file -->
+
+            <!-- Code -->
+            <div class="resume-section">
+                <h2>Code</h2>
+                <p>Check out Atelier's code repositories on GitHub:</p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="https://github.com/szachbagley/atelier-frontend" target="_blank" class="btn btn-primary">Frontend</a>
+                    <a href="https://github.com/szachbagley/atelier-api" target="_blank" class="btn btn-outline-primary">Backend</a>
+                    <!-- Add or remove buttons as needed -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

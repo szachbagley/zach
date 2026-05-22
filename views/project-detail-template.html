@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zach Bagley - [Project Name]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/">Zach Bagley</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section style="margin-top: 64px;">
+        <div class="container">
+
+            <!-- Back link -->
+            <a href="/projects" class="btn btn-outline-primary mb-5" style="font-size: 12px;">&larr; All Projects</a>
+
+            <!-- Project Title & Tags -->
+            <h1 class="mb-3">[PROJECT NAME]</h1>
+            <div class="mb-5">
+                <span class="badge bg-primary me-1">[Tag 1]</span>
+                <span class="badge bg-primary me-1">[Tag 2]</span>
+                <span class="badge bg-primary me-1">[Tag 3]</span>
+            </div>
+
+            <!-- Description -->
+            <div class="resume-section">
+                <h2>Description</h2>
+                <p>
+                    [A few sentences describing what the project is and what problem it solves. Keep it clear and direct — what does it do, who is it for, and why does it matter?]
+                </p>
+                <p>
+                    [Any additional context about the project's scope, status (completed / in progress), or where it was built (academic, professional, personal).]
+                </p>
+            </div>
+
+            <!-- Team -->
+            <div class="resume-section">
+                <h2>Team</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">[Name]</h5>
+                                <p class="card-text">[Role / contribution]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">[Name]</h5>
+                                <p class="card-text">[Role / contribution]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add or remove team member cards as needed. For solo projects, replace this section with a single line: "Solo project." -->
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="resume-section">
+                <h2>Tech Stack</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <h5 class="card-title">Frontend</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">[Framework / library]</span>
+                                    <span class="badge bg-primary me-1 mb-2">[Language]</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">Backend</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">[Framework / language]</span>
+                                    <span class="badge bg-primary me-1 mb-2">[Database]</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">Infrastructure</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">[Cloud / hosting]</span>
+                                    <span class="badge bg-primary me-1 mb-2">[DevOps tooling]</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Remove columns that don't apply. For simpler projects, a single flat list of badges works fine. -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demo -->
+            <div class="resume-section">
+                <h2>Demo</h2>
+                <!-- Option A: embedded video -->
+                <div class="card mb-4">
+                    <div class="card-body" style="aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; background: #0a0a0a;">
+                        <!-- Replace src with your video embed URL, or swap for an <img> screenshot -->
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="[VIDEO_EMBED_URL]"
+                            title="[Project Name] demo"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            style="display: block;">
+                        </iframe>
+                    </div>
+                </div>
+                <!-- Option B: screenshot gallery (use instead of or alongside the video) -->
+                <!--
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <img src="/images/[project]-screenshot-1.png" alt="[description]" class="img-fluid" style="width: 100%;">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/images/[project]-screenshot-2.png" alt="[description]" class="img-fluid" style="width: 100%;">
+                    </div>
+                </div>
+                -->
+                <p class="mt-3">[One sentence describing what the demo shows, or a note if a live deployment is available.]</p>
+            </div>
+
+            <!-- Code -->
+            <div class="resume-section">
+                <h2>Code</h2>
+                <p>[Brief note about the repositories — what each one contains, any important caveats (private repo, academic restrictions, etc.).]</p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="[REPO_URL]" target="_blank" class="btn btn-primary">[Repo Name / Frontend]</a>
+                    <a href="[REPO_URL]" target="_blank" class="btn btn-outline-primary">[Repo Name / Backend]</a>
+                    <!-- Add or remove buttons as needed -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
