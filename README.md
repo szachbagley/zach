@@ -18,8 +18,9 @@ A simple and elegant portfolio website built with Node.js, Express.js, and Boots
 ## Features
 
 - Responsive design using Bootstrap 5
-- Earth-tone aesthetic with retro styling (black borders, drop shadows)
-- Multiple pages: Home, About, Resume, Projects, Programming Portfolio
+- Dark, high-contrast aesthetic (SpaceX-inspired: sharp edges, vivid accent colors on black)
+- Animated hero text rotator (vertical flip ticker, color-coded terms)
+- Multiple pages: Home, About, Resume, Projects, Programming Portfolio, and per-project detail pages
 - Dockerized application
 - Automatic HTTPS with Caddy reverse proxy
 - Easy to customize and extend
@@ -31,14 +32,23 @@ portfolio-website/
 ├── public/
 │   ├── css/
 │   │   └── style.css                    # Custom CSS styles
-│   ├── js/                              # JavaScript files (add as needed)
-│   └── images/                          # Image assets
+│   ├── js/
+│   │   └── rotator.js                   # Hero flip-ticker animation
+│   ├── images/                          # Image assets
+│   └── favicon.jpg                      # Site favicon (copy of root favicon.jpg)
 ├── views/
 │   ├── index.html                       # Home page
 │   ├── about.html                       # About page
 │   ├── resume.html                      # Resume/CV page
 │   ├── projects.html                    # Projects showcase page
 │   ├── programming-portfolio.html       # LeetCode/algorithms portfolio
+│   ├── project-detail-template.html     # Template for project detail pages
+│   ├── atelier.html                     # Project detail: Atelier
+│   ├── sorterra.html                    # Project detail: Sorterra
+│   ├── navicomputer.html                # Project detail: navicomputer.net
+│   ├── realspace.html                   # Project detail: Realspace
+│   ├── intex1.html                      # Project detail: INTEX 1
+│   ├── intex2.html                      # Project detail: INTEX 2
 │   └── contact.html                     # Contact page (not linked - in development)
 ├── server.js                            # Express server
 ├── package.json                         # Project dependencies
@@ -46,6 +56,8 @@ portfolio-website/
 ├── .dockerignore                        # Docker build exclusions
 ├── info.json                            # Personal info/resume data (not used yet)
 ├── LeetCodePortfolio.pdf                # Source PDF for programming portfolio
+├── ZachBagley_Resume_051726.pdf         # Source PDF for resume page content
+├── UPDATE_061126.md                     # June 2026 overhaul instruction document
 ├── README.md                            # This file
 ├── DESIGN_NOTES.md                      # Design decisions and aesthetic guidelines
 ├── DEPLOYMENT_PLAN.md                   # Original ECS+ALB deployment plan (NOT USED)
@@ -207,6 +219,24 @@ Caddy automatically:
 - **AWS Lightsail**: VPS hosting
 
 ## Session History
+
+### Session 2026-06-11
+**Completed (full overhaul per UPDATE_061126.md):**
+- ✅ Site-wide: favicon (favicon.jpg, served from public/), larger navbar brand (~80% of navbar height), navbar links reordered to HOME · PROJECTS · RESUME · ABOUT
+- ✅ Landing page hero: subheader word "software" replaced with a vertical flip ticker cycling 7 color-coded terms on its own centered line (public/js/rotator.js + CSS); hero reduced to two buttons (VIEW PROJECTS, GET IN TOUCH → scrolls to Contact); bouncing arrow now scrolls to Featured Projects
+- ✅ Featured Projects → Atelier, Sorterra, navicomputer.net: buttons removed, whole cards clickable, colored titles (orange/blue/green), repo-accurate descriptions (≤300 chars) and badges
+- ✅ Projects page: GITHUB button, removed lead text, cards reordered to Atelier, Sorterra, navicomputer.net, Realspace, Programming Problems Portfolio, INTEX 2, INTEX 1 (Flowboarder/Classwork/Website v1–v2 removed); all cards clickable with colored titles
+- ✅ Built 6 project detail pages from project-detail-template.html (atelier, sorterra, navicomputer, realspace, intex1, intex2) with routes in server.js; content researched from each project's GitHub repos; Demo sections left as placeholders for manual insertion
+- ✅ Resume page rewritten to match ZachBagley_Resume_051726.pdf exactly (new TA title/dates, Melaleuca AI-workflows bullet, Skills & Projects restructure, Security card removed)
+- ✅ Follow-ups: flip ticker moved to its own line (fixes reflow glitch), Recent Experience TA dates synced, AWS Lambda badges added to navicomputer.net cards and detail page
+- ✅ New CSS utilities: vivid color palette variables, .accent-* title colors, .card-link clickable cards, .word-rotator ticker
+- ✅ Tested locally with Docker; deployed via ECR → Lightsail; all routes verified live at https://zachbagley.net
+
+**Current State:**
+- Site is LIVE at https://zachbagley.net with the new dark design fully deployed
+- 7 project cards on Projects page, each linking to a detail page (Programming Portfolio links to its existing page)
+- Demo sections on detail pages are placeholders awaiting manual demo embeds
+- Contact page still unlinked (in development)
 
 ### Session 2025-11-04
 **Completed:**
