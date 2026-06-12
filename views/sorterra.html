@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zach Bagley - Sorterra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/">Zach Bagley</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section style="margin-top: 64px;">
+        <div class="container">
+
+            <!-- Back link -->
+            <a href="/projects" class="btn btn-outline-primary mb-5" style="font-size: 12px;">&larr; All Projects</a>
+
+            <!-- Project Title & Tags -->
+            <h1 class="mb-3 accent-blue">Sorterra</h1>
+            <div class="mb-5">
+                <span class="badge bg-primary me-1">C#/.NET</span>
+                <span class="badge bg-primary me-1">React</span>
+                <span class="badge bg-primary me-1">MySQL</span>
+                <span class="badge bg-primary me-1">AWS Bedrock</span>
+                <span class="badge bg-primary me-1">SharePoint</span>
+                <span class="badge bg-primary me-1">RAG</span>
+            </div>
+
+            <!-- Description -->
+            <div class="resume-section">
+                <h2>Description</h2>
+                <p>
+                    Sorterra is an AI-powered file management system that integrates with SharePoint to automatically classify and organize documents. Files dropped into SharePoint are categorized by AI (invoices, contracts, meeting minutes, and more) and sorted into standardized folder structures using user-defined "recipes" — rules that match file patterns and route documents to templated paths.
+                </p>
+                <p>
+                    Beyond sorting, Sorterra indexes document content for retrieval-augmented generation (RAG), so users can run semantic searches and ask natural language questions about their organization's documents. The system is multi-tenant, with isolated data scoping per organization, and keeps a comprehensive audit trail of activity for compliance and dashboards.
+                </p>
+                <p>
+                    Sorterra is my MISM capstone project at BYU, built with a five-person team and currently in active development. I own the .NET backend API and authentication.
+                </p>
+            </div>
+
+            <!-- Team -->
+            <div class="resume-section">
+                <h2>Team</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Zach Bagley</h5>
+                                <p class="card-text">Backend API &amp; Authentication</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Patrick Petty</h5>
+                                <p class="card-text">Frontend Development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">McKay Boody</h5>
+                                <p class="card-text">Cloud Infrastructure &amp; DevOps</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Nate Shaw</h5>
+                                <p class="card-text">AI/ML Classification</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Caleb Gooch</h5>
+                                <p class="card-text">AI/ML Search &amp; RAG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="resume-section">
+                <h2>Tech Stack</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <h5 class="card-title">Frontend</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">React 19</span>
+                                    <span class="badge bg-primary me-1 mb-2">React Router 7</span>
+                                    <span class="badge bg-primary me-1 mb-2">Vite 7</span>
+                                    <span class="badge bg-primary me-1 mb-2">Tailwind CSS 4</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">Backend</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">.NET / ASP.NET Core</span>
+                                    <span class="badge bg-primary me-1 mb-2">Entity Framework Core</span>
+                                    <span class="badge bg-primary me-1 mb-2">MySQL 8.0</span>
+                                    <span class="badge bg-primary me-1 mb-2">Swagger/OpenAPI</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">AI</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">AWS Bedrock AgentCore</span>
+                                    <span class="badge bg-primary me-1 mb-2">RAG Semantic Search</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="card-title">Infrastructure</h5>
+                                <div class="skill-list">
+                                    <span class="badge bg-primary me-1 mb-2">AWS ECS Fargate</span>
+                                    <span class="badge bg-primary me-1 mb-2">Amazon Cognito</span>
+                                    <span class="badge bg-primary me-1 mb-2">Azure AD / Microsoft Graph (SharePoint)</span>
+                                    <span class="badge bg-primary me-1 mb-2">Docker</span>
+                                    <span class="badge bg-primary me-1 mb-2">GitHub Actions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PUT DEMO IN HERE WHEN IT'S READY! Get template from template file -->
+
+            <!-- Code -->
+            <div class="resume-section">
+                <h2>Code</h2>
+                <p>Check out Sorterra's code repositories on GitHub:</p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="https://github.com/szachbagley/sorterra-frontend" target="_blank" class="btn btn-primary">Frontend</a>
+                    <a href="https://github.com/szachbagley/sorterra-api" target="_blank" class="btn btn-outline-primary">Backend</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

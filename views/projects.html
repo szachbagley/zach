@@ -6,6 +6,7 @@
     <title>Zach Bagley - Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 </head>
 <body>
     <!-- Navigation -->
@@ -21,13 +22,13 @@
                         <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
+                        <a class="nav-link active" href="/projects">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/resume">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/projects">Projects</a>
+                        <a class="nav-link" href="/about">About</a>
                     </li>
                 </ul>
             </div>
@@ -37,178 +38,155 @@
     <!-- Projects Section -->
     <section style="margin-top: 64px;">
         <div class="container">
-            <h1 class="mb-5">My Projects</h1>
-            <a href="https://github.com/szachbagley" class="btn btn-primary me-3">Visit my Git Hub</a>
-            <br>
-            <br>
-            <p class="lead mb-5">A collection of academic, professional, and personal projects showcasing my work in software development.</p>
+            <h1 class="mb-3">My Projects</h1>
+            <a href="https://github.com/szachbagley" class="btn btn-primary mb-5">GitHub</a>
 
             <div class="row">
-                <!-- Project 1 -->
+                <!-- Project 1: Atelier -->
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">PROGRAMMING PROBLEMS PORTFOLIO: DATA STRUCTURES AND ALGORITHMS</h5>
-                            <p class="card-text">
-                                This portfolio collects records of my solutions to various programming problems, mostly related to data structures and algorithms. Most of these problems are from LeetCode, but there are several from other sources. In most cases, I've also included alternative solutions and analyses of my work.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">Algorithms</span>
-                                <span class="badge bg-primary me-1">Data Structures</span>
-                                <span class="badge bg-primary">LeetCode</span>
+                    <a href="/atelier" class="card-link">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title accent-orange">ATELIER</h5>
+                                <p class="card-text">
+                                    An AI-powered storyboarding tool for filmmakers that streamlines pre-production by combining conversational AI, image generation, and professional annotation tools into a single workflow — from concept art and component libraries to fully composed, annotated storyboard frames.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-1">React</span>
+                                    <span class="badge bg-primary me-1">TypeScript</span>
+                                    <span class="badge bg-primary me-1">Node.js</span>
+                                    <span class="badge bg-primary me-1">MySQL</span>
+                                    <span class="badge bg-primary me-1">AWS</span>
+                                    <span class="badge bg-primary">Generative AI</span>
+                                </div>
                             </div>
-                            <a href="/programming-portfolio" class="btn btn-outline-primary">View Portfolio</a>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Project 2: Sorterra -->
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">REALSPACE</h5>
-                            <p class="card-text">
-                                A social media app designed to be more healthy and productive than other social platforms. Written in Swift with a backend API built using C#/.NET.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">Swift</span>
-                                <span class="badge bg-primary me-1">C#/.NET</span>
-                                <span class="badge bg-primary me-1">iOS</span>
-                                <span class="badge bg-primary">Social Media</span>
+                    <a href="/sorterra" class="card-link">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title accent-blue">SORTERRA</h5>
+                                <p class="card-text">
+                                    An AI-powered file management system for SharePoint, built as my MISM capstone with a five-person team. Sorterra automatically classifies and organizes documents using sorting recipes, RAG-based semantic search, and natural language queries. I built the .NET backend API and authentication.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-1">C#/.NET</span>
+                                    <span class="badge bg-primary me-1">React</span>
+                                    <span class="badge bg-primary me-1">MySQL</span>
+                                    <span class="badge bg-primary me-1">AWS Bedrock</span>
+                                    <span class="badge bg-primary me-1">SharePoint</span>
+                                    <span class="badge bg-primary">RAG</span>
+                                </div>
                             </div>
-                            <a href="https://github.com/szachbagley/realspace" target="_blank" class="btn btn-outline-primary me-2">Frontend</a>
-                            <a href="https://github.com/szachbagley/Realspace-API-v2" target="_blank" class="btn btn-outline-primary">Backend</a>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <!-- Project 4 -->
+                <!-- Project 3: navicomputer.net -->
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">SORTERRA (CAPSTONE PROJECT)</h5>
-                            <p class="card-text">
-                                An AI-supported file management assistant that organizes and names files automatically in relevant and logical structures. Features a chatbot which understands the filesystem's content and provides thorough, competent responses to questions. Currently in development.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">Generative AI</span>
-                                <span class="badge bg-primary me-1">Machine Learning</span>
-                                <span class="badge bg-primary me-1">File Systems</span>
-                                <span class="badge bg-primary me-1">AI Security</span>
+                    <a href="/navicomputer" class="card-link">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title accent-green">NAVICOMPUTER.NET</h5>
+                                <p class="card-text">
+                                    An interactive, searchable map of the Star Wars galaxy. Browse nearly 6,000 canon star systems organized by their in-universe grid coordinates, explore neighboring regions of space, and add your own custom planets to the map. Live and deployed on AWS.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-1">React</span>
+                                    <span class="badge bg-primary me-1">TypeScript</span>
+                                    <span class="badge bg-primary me-1">Express</span>
+                                    <span class="badge bg-primary me-1">MySQL</span>
+                                    <span class="badge bg-primary me-1">AWS EC2</span>
+                                    <span class="badge bg-primary">AWS Lambda</span>
+                                </div>
                             </div>
-                            <a href="https://github.com/szachbagley/sorterra-api" target="_blank" class="btn btn-outline-primary">Backend</a>
-                            <a href="https://github.com/n8shaw/sorterra-agent" target="_blank" class="btn btn-outline-primary me-2">AI Agent</a>
-
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <!-- Project 5 -->
+                <!-- Project 4: Realspace -->
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">FLOWBOARDER</h5>
-                            <p class="card-text">
-                                An AI storyboarding API that helps creators visualize and plan their projects. Built with JavaScript and Node.js.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">JavaScript</span>
-                                <span class="badge bg-primary me-1">Node.js</span>
-                                <span class="badge bg-primary me-1">AI</span>
-                                <span class="badge bg-primary">Storyboarding</span>
+                    <a href="/realspace" class="card-link">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title accent-violet">REALSPACE</h5>
+                                <p class="card-text">
+                                    An alternative social media platform where engagement is driven by meaningful community building and offline experiences. A native SwiftUI iOS app blending elements of Letterboxd, Goodreads, and local events platforms, backed by a C#/ASP.NET Core REST API with JWT auth and MySQL.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-1">Swift</span>
+                                    <span class="badge bg-primary me-1">SwiftUI</span>
+                                    <span class="badge bg-primary me-1">C#/.NET</span>
+                                    <span class="badge bg-primary me-1">MySQL</span>
+                                    <span class="badge bg-primary">Docker</span>
+                                </div>
                             </div>
-                            <a href="https://github.com/szachbagley/flowboarder-api" target="_blank" class="btn btn-outline-primary">GitHub</a>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <!-- Project 6 -->
+                <!-- Project 5: Programming Problems Portfolio -->
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">INTEX 2</h5>
-                            <p class="card-text">
-                                INTEX is a team case competition for each semester of the BYU IS junior core. This project from April 2024 challenged my team of four to build a storefront web application in C# (.NET Framework) with features supported by strong cybersecurity standards and thorough machine learning pipelines in four days. Originally deployed with Microsoft Azure.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">C#</span>
-                                <span class="badge bg-primary me-1">.NET</span>
-                                <span class="badge bg-primary me-1">ML</span>
-                                <span class="badge bg-primary">Azure</span>
+                    <a href="/programming-portfolio" class="card-link">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">PROGRAMMING PROBLEMS PORTFOLIO: DATA STRUCTURES AND ALGORITHMS</h5>
+                                <p class="card-text">
+                                    This portfolio collects records of my solutions to various programming problems, mostly related to data structures and algorithms. Most of these problems are from LeetCode, but there are several from other sources. In most cases, I've also included alternative solutions and analyses of my work.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-1">Algorithms</span>
+                                    <span class="badge bg-primary me-1">Data Structures</span>
+                                    <span class="badge bg-primary">LeetCode</span>
+                                </div>
                             </div>
-                            <a href="https://github.com/szachbagley/INTEX-BYU-IS-Final-Project-Winter-2024" target="_blank" class="btn btn-outline-primary">GitHub</a>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <!-- Project 7 -->
+                <!-- Project 6: INTEX 2 -->
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">INTEX 1</h5>
-                            <p class="card-text">
-                                This project is from INTEX December 2023. My team of four was given four days to build a web application for cities to use to gather and analyze mental health data. The application is written in JavaScript with Node.js and was originally deployed with Amazon Elastic Beanstalk.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">JavaScript</span>
-                                <span class="badge bg-primary me-1">Node.js</span>
-                                <span class="badge bg-primary">AWS</span>
+                    <a href="/intex2" class="card-link">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title accent-magenta">INTEX 2</h5>
+                                <p class="card-text">
+                                    INTEX is a team case competition in the BYU IS junior core. In four days, my team of four built a storefront web application in C#/ASP.NET, with features supported by strong cybersecurity standards and machine learning pipelines. Originally deployed with Microsoft Azure.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-1">C#</span>
+                                    <span class="badge bg-primary me-1">ASP.NET</span>
+                                    <span class="badge bg-primary me-1">Machine Learning</span>
+                                    <span class="badge bg-primary">Azure</span>
+                                </div>
                             </div>
-                            <a href="https://github.com/szachbagley/INTEX-BYU-IS-Final-Project-Fall-2023" target="_blank" class="btn btn-outline-primary">GitHub</a>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <!-- Project 8 -->
+                <!-- Project 7: INTEX 1 -->
                 <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">CLASSWORK</h5>
-                            <p class="card-text">
-                                [TBA]
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">Various</span>
-                                <span class="badge bg-primary">Academic</span>
+                    <a href="/intex1" class="card-link">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title accent-yellow">INTEX 1</h5>
+                                <p class="card-text">
+                                    Built in four days for INTEX, December 2023. A web application that helps cities gather, analyze, and visualize community mental health survey data, with an authenticated admin interface and Python data analysis pipeline. Built with Node.js and EJS; deployed on AWS Elastic Beanstalk.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-1">JavaScript</span>
+                                    <span class="badge bg-primary me-1">Node.js</span>
+                                    <span class="badge bg-primary me-1">EJS</span>
+                                    <span class="badge bg-primary me-1">Python</span>
+                                    <span class="badge bg-primary">AWS</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Project 9 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">WEBSITE v1.0</h5>
-                            <p class="card-text">
-                                The first iteration of my website. A very simple webdev project from early in my programming education.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">HTML</span>
-                                <span class="badge bg-primary me-1">CSS</span>
-                                <span class="badge bg-primary">JavaScript</span>
-                            </div>
-                            <a href="https://github.com/szachbagley/IS201" target="_blank" class="btn btn-outline-primary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 10 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">WEBSITE v2.0</h5>
-                            <p class="card-text">
-                                I had a bit more CSS fun with this one. All the art was drawn by me (I'm no artist, so go easy on me!).
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">HTML</span>
-                                <span class="badge bg-primary me-1">CSS</span>
-                                <span class="badge bg-primary">Art</span>
-                            </div>
-                            <a href="https://github.com/szachbagley/zachbagley" target="_blank" class="btn btn-outline-primary">GitHub</a>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

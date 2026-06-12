@@ -39,6 +39,30 @@ app.get('/programming-portfolio', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'programming-portfolio.html'));
 });
 
+app.get('/atelier', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'atelier.html'));
+});
+
+app.get('/sorterra', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'sorterra.html'));
+});
+
+app.get('/navicomputer', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'navicomputer.html'));
+});
+
+app.get('/realspace', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'realspace.html'));
+});
+
+app.get('/intex1', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'intex1.html'));
+});
+
+app.get('/intex2', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'intex2.html'));
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

@@ -6,6 +6,7 @@
     <title>Zach Bagley - Software Engineer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 </head>
 <body>
     <!-- Navigation -->
@@ -21,13 +22,13 @@
                         <a class="nav-link active" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
+                        <a class="nav-link" href="/projects">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/resume">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/projects">Projects</a>
+                        <a class="nav-link" href="/about">About</a>
                     </li>
                 </ul>
             </div>
@@ -38,18 +39,18 @@
     <section class="hero">
         <div class="container">
             <h1>Zach Bagley</h1>
-            <p class="lead">Dependable, efficient software through rapid, AI-enhanced workflows</p>
+            <p class="lead">Dependable, efficient <span class="word-rotator" id="word-rotator"><span class="rotator-term accent-blue is-active">software</span><span class="rotator-term accent-orange">cloud infrastructure</span><span class="rotator-term accent-magenta">UI &amp; UX design</span><span class="rotator-term accent-violet">software architecture</span><span class="rotator-term accent-green">DevOps pipelines</span><span class="rotator-term accent-yellow">documentation</span><span class="rotator-term accent-teal">full-stack engineering</span></span> through rapid, AI-enhanced workflows</p>
             <div class="mt-4">
             <a href="/projects" class="btn btn-primary me-3">View Projects</a>
-            <a href="/about" class="btn btn-outline-primary me-4" style="margin-right: 0.05vw;">About Me</a>
-            <a href="https://github.com/szachbagley" class="btn btn-primary me-3">Git Hub</a>
-            <a href="https://www.linkedin.com/in/szachbagley/" class="btn btn-outline-primary">LinkedIn</a>
+            <a href="#contact" class="btn btn-outline-primary">Get In Touch</a>
             </div>
+            <a href="#featured-projects" aria-label="Scroll to Featured Projects">
             <div class="scroll-indicator mt-5">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
             </svg>
             </div>
+            </a>
         </div>
     </section>
 
@@ -57,67 +58,75 @@
     <section>
         <div class="container">
             <!-- Featured Projects Section -->
-            <div class="d-flex justify-content-between align-items-center mb-4">
+            <div id="featured-projects" class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="mb-0">Featured Projects</h2>
                 <a href="/projects" class="btn btn-outline-primary">View All</a>
             </div>
             <div class="row g-4 mb-5">
-                <!-- Project 1: Programming Problems Portfolio -->
+                <!-- Project 1: Atelier -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">PROGRAMMING PROBLEMS PORTFOLIO: DATA STRUCTURES AND ALGORITHMS</h5>
-                            <p class="card-text">
-                                This portfolio collects records of my solutions to various programming problems, mostly related to data structures and algorithms. Most of these problems are from LeetCode, but there are several from other sources. In most cases, I've also included alternative solutions and analyses of my work.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">Algorithms</span>
-                                <span class="badge bg-primary me-1">Data Structures</span>
-                                <span class="badge bg-primary">LeetCode</span>
+                    <a href="/atelier" class="card-link">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title accent-orange">ATELIER</h5>
+                                <p class="card-text">
+                                    An AI-powered storyboarding tool for filmmakers that streamlines pre-production by combining conversational AI, image generation, and professional annotation tools into a single workflow — from concept art and component libraries to fully composed, annotated storyboard frames.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-1">React</span>
+                                    <span class="badge bg-primary me-1">TypeScript</span>
+                                    <span class="badge bg-primary me-1">Node.js</span>
+                                    <span class="badge bg-primary me-1">MySQL</span>
+                                    <span class="badge bg-primary me-1">AWS</span>
+                                    <span class="badge bg-primary">Generative AI</span>
+                                </div>
                             </div>
-                            <a href="/programming-portfolio" class="btn btn-outline-primary">View Portfolio</a>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Project 2: Sorterra -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">SORTERRA (CAPSTONE PROJECT)</h5>
-                            <p class="card-text">
-                                An AI-supported file management assistant that organizes and names files automatically in relevant and logical structures. Features a chatbot which understands the filesystem's content and provides thorough, competent responses to questions. Currently in development.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">Generative AI</span>
-                                <span class="badge bg-primary me-1">Machine Learning</span>
-                                <span class="badge bg-primary me-1">File Systems</span>
-                                <span class="badge bg-primary me-1">AI Security</span>
+                    <a href="/sorterra" class="card-link">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title accent-blue">SORTERRA</h5>
+                                <p class="card-text">
+                                    An AI-powered file management system for SharePoint, built as my MISM capstone with a five-person team. Sorterra automatically classifies and organizes documents using sorting recipes, RAG-based semantic search, and natural language queries. I built the .NET backend API and authentication.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-1">C#/.NET</span>
+                                    <span class="badge bg-primary me-1">React</span>
+                                    <span class="badge bg-primary me-1">MySQL</span>
+                                    <span class="badge bg-primary me-1">AWS Bedrock</span>
+                                    <span class="badge bg-primary me-1">SharePoint</span>
+                                    <span class="badge bg-primary">RAG</span>
+                                </div>
                             </div>
-                            <a href="https://github.com/szachbagley/sorterra-api" target="_blank" class="btn btn-outline-primary">Backend</a>
-                            <a href="https://github.com/n8shaw/sorterra-agent" target="_blank" class="btn btn-outline-primary me-2">AI Agent</a>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <!-- Project 3: Realspace -->
+                <!-- Project 3: navicomputer.net -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">REALSPACE</h5>
-                            <p class="card-text">
-                                A social media app designed to be more healthy and productive than other social platforms. Written in Swift with a backend API built using C#/.NET.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-primary me-1">Swift</span>
-                                <span class="badge bg-primary me-1">C#/.NET</span>
-                                <span class="badge bg-primary me-1">iOS</span>
-                                <span class="badge bg-primary">Social Media</span>
+                    <a href="/navicomputer" class="card-link">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title accent-green">NAVICOMPUTER.NET</h5>
+                                <p class="card-text">
+                                    An interactive, searchable map of the Star Wars galaxy. Browse nearly 6,000 canon star systems organized by their in-universe grid coordinates, explore neighboring regions of space, and add your own custom planets to the map. Live and deployed on AWS.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-1">React</span>
+                                    <span class="badge bg-primary me-1">TypeScript</span>
+                                    <span class="badge bg-primary me-1">Express</span>
+                                    <span class="badge bg-primary me-1">MySQL</span>
+                                    <span class="badge bg-primary me-1">AWS EC2</span>
+                                    <span class="badge bg-primary">AWS Lambda</span>
+                                </div>
                             </div>
-                            <a href="https://github.com/szachbagley/realspace" target="_blank" class="btn btn-outline-primary me-2">Frontend</a>
-                            <a href="https://github.com/szachbagley/Realspace-API-v2" target="_blank" class="btn btn-outline-primary">Backend</a>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -134,7 +143,7 @@
                             <h3 class="card-title">Teaching Assistant</h3>
                             <h5>Data Communications & Enterprise Application Development</h5>
                             <p class="card-text text-muted">BYU Information Systems, Provo, UT</p>
-                            <p class="card-text text-muted">Sep 2025 – Present</p>
+                            <p class="card-text text-muted">Sep 2025 – Apr 2026</p>
                             <ul class="card-text text-muted">
                                 <li>Contributed to curriculum development and student assistance in topics related to data communications (especially TCP/IP networking) and application development (particularly with ASP .NET)</li>
                                 <li>Graded assignments including code repositories, AWS infrastructure stacks, and full development projects</li>
@@ -163,7 +172,7 @@
             </div>
             <br><br><br>
             <!-- Profile Section -->
-            <div class="row g-4 mb-5">
+            <div id="contact" class="row g-4 mb-5">
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
@@ -221,5 +230,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/rotator.js"></script>
 </body>
 </html>
