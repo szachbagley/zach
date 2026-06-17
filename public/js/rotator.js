@@ -1,4 +1,3 @@
-// Vertical flip ticker for the hero subheader.
 document.addEventListener('DOMContentLoaded', function () {
     var rotator = document.getElementById('word-rotator');
     if (!rotator) return;

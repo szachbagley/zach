@@ -12,7 +12,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="/">Zach Bagley</a>
+            <a class="navbar-brand" href="/"><img src="/images/logo.jpg" alt="Zach Bagley" class="navbar-logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,21 +37,42 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <h1>Zach Bagley</h1>
-            <p class="lead">Dependable, efficient <span class="word-rotator" id="word-rotator"><span class="rotator-term accent-blue is-active">software</span><span class="rotator-term accent-orange">cloud infrastructure</span><span class="rotator-term accent-magenta">UI &amp; UX design</span><span class="rotator-term accent-violet">software architecture</span><span class="rotator-term accent-green">DevOps pipelines</span><span class="rotator-term accent-yellow">documentation</span><span class="rotator-term accent-teal">full-stack engineering</span></span> through rapid, AI-enhanced workflows</p>
-            <div class="mt-4">
-            <a href="/projects" class="btn btn-primary me-3">View Projects</a>
-            <a href="#contact" class="btn btn-outline-primary">Get In Touch</a>
+        <div class="hero-inner">
+            <!-- Left: name -->
+            <div class="hero-name">
+                <span>ZACH</span>
+                <span>BAGLEY</span>
             </div>
-            <a href="#featured-projects" aria-label="Scroll to Featured Projects">
-            <div class="scroll-indicator mt-5">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
-            </svg>
+
+            <!-- Right: tagline + latest + buttons -->
+            <div class="hero-content">
+                <p class="hero-tagline">Dependable, efficient <span class="word-rotator" id="word-rotator"><span class="rotator-term accent-blue is-active">software</span><span class="rotator-term accent-teal">AI solutions</span><span class="rotator-term accent-orange">cloud infrastructure</span><span class="rotator-term accent-magenta">UI &amp; UX design</span><span class="rotator-term accent-violet">architecture</span><span class="rotator-term accent-green">DevOps pipelines</span><span class="rotator-term accent-yellow">documentation</span><span class="rotator-term accent-blue">full-stack engineering</span><span class="rotator-term accent-teal">database engineering</span></span></p>
+                <p class="hero-tagline">through rapid, AI-enhanced workflows.</p>
+
+                <hr class="hero-divider">
+
+                <p class="hero-latest-label">The Latest:</p>
+                <ul class="hero-latest-list">
+                    <li><a href="/atelier">Developing Atelier: a tech solution for film storyboarding</a></li>
+                    <li>Graduated BYU with a master's degree in Information Systems Management</li>
+                    <li><a href="/sorterra">Capstone project: Sorterra, an AI software for keeping your SharePoint organized</a></li>
+                    <li>Java developer certification from WGU</li>
+                </ul>
+
+                <div class="hero-buttons">
+                    <a href="/projects" class="btn btn-primary me-3">See My Work</a>
+                    <a href="#contact" class="btn btn-outline-primary">Get In Touch</a>
+                </div>
             </div>
-            </a>
         </div>
+
+        <a href="#featured-projects" aria-label="Scroll to Featured Projects">
+            <div class="scroll-indicator" style="margin-top: 48px;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
+                </svg>
+            </div>
+        </a>
     </section>
 
     <!-- Main Content Section -->
